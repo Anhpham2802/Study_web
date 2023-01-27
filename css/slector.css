@@ -1,0 +1,12 @@
+/* phần tử * sẽ thay đổi toàn bộ thông tin trong html */
+*{
+    padding: 0;
+    margin: 0;
+    color: blueviolet;
+}
+
+/* phần tử con cháu article */
+
+article *{
+    color: red;
+}

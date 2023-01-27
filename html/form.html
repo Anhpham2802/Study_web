@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM nhập dữ liệu text, password</title>
+</head>
+
+<body>
+    <h1>Input Text, password</h1>
+    <form action="">
+        <!--Tạo tiêu đề cho input form-->
+        <label for="nguoi dung">Tên đăng nhập: </label>
+        <input type="text" name="username" placeholder="Tên login" id="nguoi dung">
+        <!-- placeholder tạo ra chú thíhc nằm trong ô nhập dữ liệu-->
+        <br><br><label for="">Mật khẩu: </label>
+        <input type="password" placeholder="mật khẩu">
+    </form>
+
+    <h1>INPUT Nhập dữ liệu email, number</h1>
+    <form action="">
+        <label for="email"> Email</label>
+        <input type="text" name="email" id="email">
+
+        <label for="amount">Số lượng</label>
+        <input type="number" name="amount" id="amount" min="1" max="5">
+    </form>
+
+    <h1>Input NHập ngày tháng</h1>
+    <form action="">
+        <label for="date">Ngày sinh</label>
+        <input type="date" name="date" id="date">
+    </form>
+    <h1>Form chọn theo option tự đặt</h1>
+
+    <form action="">
+        <label for="city">Thành phố </label>
+        <select name="city" id="city">
+            <option value="0">Chọn thành phố</option>
+            <option value="1">Hà Nội</option>
+            <option value="2">Hồ Chí Minh</option>
+            <option value="3">Đà Nẵng</option>
+            <option value="4">Buôn Ma Thuật</option>
+        </select>
+    </form>
+
+    <h1>Form nhập dữ liệu radio box</h1>
+    <form action="">
+        <label for="">Chọn giới tính: </label><br>
+        <label for="nam">Nam</label>
+        <input type="radio" name="gioitinh" id="nam" value="1">
+        <label for="nu">Nữ</label>
+        <input type="radio" name="gioitinh" id="nu" value="2">
+    </form>
+    <br><br>
+    <!--Văn bản dài -->
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <br>
+    <!-- Lưu trữ dữ liệu ngầm -->
+    <input type="hidden" name="blabla" value="http://unitop.vn">
+    <button name=""login>
+        <!-- Có thể thêm ảnh hoặc dòng text vào đây -->
+    </button>
+</body>
+
+</html>

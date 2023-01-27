@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chương 1</title>
+    <script src="../js/addjs.js"></script>
+    <style>
+        #total {
+            color: red;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <script>
+        function hello(){
+            alert('Hello world');
+        }
+    </script> -->
+    <h2>Nhập môn js</h2>
+    <a href="" onclick="hello();">Click me</a><!-- cach 2-->
+    <br>
+    <a href="" onclick="alert('ok');">Click me</a><!-- cach 1-->
+    <!-- cach 3: tao file js-->
+    <!-- Khai bao bien -->
+    <br>
+    <div id="total"> </div>
+    <script>
+        //cach1: ten dc hien thi trong console cua trinh duyet
+        var fullname = "Nguyen Van A";
+        console.log(fullname);
+        //cach 2: xuat hien tren man hinh
+        {
+            let a = 100;
+            document.write(a);
+        }
+        var a = 10;
+        var b = 20;
+        var total = a + b;
+
+        //document.write(c);
+        //cach 3: xuat dang hop thoai: alert()
+        //alert(total);
+        //cach 4: xuat gia tri vao the html: innerHTML()
+        document.getElementById('total').innerHTML = total;
+    </script>
+    <!-- Khai bao bien vs tu khoa let: chi dung bien trong block -->
+    <!-- hoisting: đẩy lên dùng để hỗ trợ khi biến được sử dụng trước khi khai báo-->
+    <script>
+        a = 20;
+        console.log(a);
+        //var a = 10;
+        //let a;//ko dung dc hoisting: const va let
+    </script>
+
+    <!-- Khai bao bien vs tu khoa const: khong the thay doi gia tri (có thể nếu là một object) -->
+    <script>
+        //const PI = 3.14;//phai gan gia tri ngay khi khai bao
+        //PI = 3.15; ->ko the thay doi gia tri
+        {
+            const PI = 3.15;//chi co the dung trong block
+            console.log(PI);
+        }
+        //console.log(PI);
+    </script>
+    <!-- cac kieu du lieu trong js -->
+    <script>
+        var number = 10;
+        var string = "Nguyen Van A";
+        var boolean = true;
+        var object = {
+            'name': "Nguyen Van A",//co the co hoac ko co dau ''
+            age: 20,
+            gender: 'male'
+        };
+        var array = [1, 2, 3, 4, 5];
+        var nullVar = null;
+        var undefinedVar;
+        console.log(object);
+    </script>
+</body>
+
+</html>

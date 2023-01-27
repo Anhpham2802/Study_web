@@ -1,0 +1,13 @@
+/* Có 3 cách import css vào html */
+#wrapper {
+    width: 90%;
+    height: 60%;
+    background-color: #c59c7b;
+    margin: 0px auto;
+    /* border: #392392; */
+    padding: 20px;
+}
+.text-new{
+    color: rgb(67, 12, 118);
+    font-weight: bold;
+}
